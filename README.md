@@ -10,11 +10,24 @@
 请牢记：互联网不是法外之地！  
 使用本项目即表示您已理解并同意上述要求。因非法使用本项目所引发的任何法律责任与后果，均由使用者个人承担。  
 
+# 作者初心
+🧰 为了让红队和渗透测试人员少踩坑，这个 EXE 做了免杀处理优化，节省你反复调试的时间。  
+🚫 没有加壳，方便你逆向、调试和改造。  
+🔒 源码因特殊原因暂不开放，但后续会持续维护使用说明。  
+
+如果本项目对您的工作有所帮助，欢迎给予⭐️支持，感谢您的鼓励！  
+
 # 工具使用说明
-只需要将生成的bin文件重命名为2.txt，使用第一个Xor.exe运行就会自动将ShellCode混淆，将2.txt与另一个EXE文件放入同一个目录即可。  
-【时间长不免杀，只需要对Bypass.exe加一下壳就行，保证壳不报毒即可】  
-解压密码:leek  
+1.只需将生成的 bin 文件重命名为 2.txt。，将2.txt与压缩包解压后的Xor.exe和BypassAv.exe放入同一个目录。   
+2.运行第一个 Xor.exe，程序会自动对2.txt内的Shellcode进行混淆，并覆盖掉原本未加密的Shellcode。  
+eg：加密前后对比   
+<img width="373" height="872" alt="image" src="https://github.com/user-attachments/assets/0fd53511-4813-4d26-875c-29fc68b80140" />
+<img width="406" height="894" alt="image" src="https://github.com/user-attachments/assets/91a65cad-8107-4ac8-859f-32c2f6776bee" />
+
+3.在目标环境中，只需要将 2.txt 与BypassAv.exe文件放在同一目录下即可正常使用。【BypassAv.exe可以随意改名】    
 <img width="132" height="204" alt="image" src="https://github.com/user-attachments/assets/fc97f9d8-dede-4903-9877-b2479d3334ce" />
+
+解压密码:leek  
 
 
 # 更新日志  
