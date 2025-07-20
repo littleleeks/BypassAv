@@ -32,7 +32,9 @@ eg：加密前后对比
 
 # 更新日志  
 更新说明，免杀失效可在问题中留言，作者会留意并更新，持续更新.....  
-2025.7.20  
+2025.7.20  ----  增加导入表隐藏处理
+<img width="1419" height="605" alt="image" src="https://github.com/user-attachments/assets/2525f15f-55f6-4c59-9d4c-103b8553f4a6" />
+
 
 # 免杀效果  
 支持 360安全卫士，Windows Defender，腾讯安全管家以及火绒等杀软一键上线并执行命令  
