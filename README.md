@@ -13,7 +13,7 @@
 # 工具使用说明
 只需要将生成的bin文件重命名为2.txt，使用第一个Xor.exe运行就会自动将ShellCode混淆，将2.txt与另一个EXE文件放入同一个目录即可。  
 【时间长不免杀，只需要对Bypass.exe加一下壳就行，保证壳不报毒即可】  
-解压密码:leek
+解压密码:leek  
 <img width="132" height="204" alt="image" src="https://github.com/user-attachments/assets/fc97f9d8-dede-4903-9877-b2479d3334ce" />
 
 
