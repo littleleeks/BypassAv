@@ -27,7 +27,6 @@ eg：加密前后对比
 3.在目标环境中，只需要将 2.txt 与BypassAv.exe文件放在同一目录下即可正常使用。【BypassAv.exe可以随意改名】    
 <img width="132" height="204" alt="image" src="https://github.com/user-attachments/assets/fc97f9d8-dede-4903-9877-b2479d3334ce" />
 
-解压密码:leek  
 
 
 # 更新日志  
