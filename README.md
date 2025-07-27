@@ -21,7 +21,7 @@
 作者也对360 QVM202做了多次绕过，但是经常被上传，作者会后续添加一个白加黑来针对360，正在制作....    
 
 # 工具使用说明
-【如果Windows Defender报毒，可以使用加壳方式进行绕过】
+【如果Windows Defender报毒，可以使用加壳方式进行绕过】  
 1.只需将生成的 bin 文件重命名为 2.txt。，将2.txt与压缩包解压后的Xor.exe和BypassAv.exe放入同一个目录。   
 2.运行第一个 Xor.exe，程序会自动对2.txt内的Shellcode进行混淆，并覆盖掉原本未加密的Shellcode。  
 eg：加密前后对比   
