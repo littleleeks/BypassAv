@@ -17,7 +17,11 @@
 
 如果本项目对您的工作有所帮助，欢迎给予⭐️支持，感谢您的鼓励！  
 
+# 小Tips
+作者也对360 QVM202做了多次绕过，但是经常被上传，作者会后续添加一个白加黑来针对360，正在制作....    
+
 # 工具使用说明
+【如果Windows Defender报毒，可以使用加壳方式进行绕过】
 1.只需将生成的 bin 文件重命名为 2.txt。，将2.txt与压缩包解压后的Xor.exe和BypassAv.exe放入同一个目录。   
 2.运行第一个 Xor.exe，程序会自动对2.txt内的Shellcode进行混淆，并覆盖掉原本未加密的Shellcode。  
 eg：加密前后对比   
@@ -31,13 +35,14 @@ eg：加密前后对比
 
 # 更新日志  
 更新说明，免杀失效可在问题中留言，作者会留意并更新，持续更新.....  
+2025.7.27  ----  增加使用说明
 2025.7.23  ----  增加Hook  
 2025.7.20  ----  增加导入表隐藏处理
 <img width="1419" height="605" alt="image" src="https://github.com/user-attachments/assets/2525f15f-55f6-4c59-9d4c-103b8553f4a6" />
 
 
 # 免杀效果  
-支持 360安全卫士，Windows Defender，腾讯安全管家以及火绒等杀软一键上线并执行命令  
+支持 Windows Defender，腾讯安全管家以及火绒等杀软一键上线并执行命令  
 <img width="1713" height="1193" alt="image" src="https://github.com/user-attachments/assets/1a6e10e1-79fe-43d9-a163-fbb1c0869c5a" />
 <img width="1933" height="1270" alt="image" src="https://github.com/user-attachments/assets/f0ffe380-dcab-4236-b3e1-1946f28a5c85" />
 <img width="1133" height="589" alt="image" src="https://github.com/user-attachments/assets/c6f030ae-1265-4350-955b-7d0d10fa5507" />
