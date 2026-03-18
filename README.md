@@ -17,33 +17,81 @@
 
 如果本项目对您的工作有所帮助，欢迎给予⭐️支持，感谢您的鼓励！  
 
-# 小Tips
-作者也对360 QVM202做了多次绕过，但是经常被上传，作者会后续添加一个白加黑来针对360，正在制作....    
 
 # 工具使用说明
 【如果Windows Defender报毒，可以使用加壳方式进行绕过】  
-1.只需将生成的 bin 文件重命名为 2.txt。，将2.txt与压缩包解压后的Xor.exe和BypassAv.exe放入同一个目录。   
-2.运行第一个 Xor.exe，程序会自动对2.txt内的Shellcode进行混淆，并覆盖掉原本未加密的Shellcode。  
-eg：加密前后对比   
-<img width="373" height="872" alt="image" src="https://github.com/user-attachments/assets/0fd53511-4813-4d26-875c-29fc68b80140" />
-<img width="406" height="894" alt="image" src="https://github.com/user-attachments/assets/91a65cad-8107-4ac8-859f-32c2f6776bee" />
+【特别提示，增加了混淆，盲目调试会导致CPU过载】
+1.使用Xor.exe工具对ShellCode文件进行处理【已内置帮助面板方面使用】
+```
+用法: xor.exe -p <密码> [-f <文件名>] [-h]
+选项:
+  -p <密码>     指定加密密码 (必需)
+  -f <文件名>   指定要操作的文件 (默认: 2.txt)
+  -h, --help    显示此帮助信息
+说明:
+  该工具使用XOR算法对文件进行加密/解密（同一操作）。
+  注意：操作会直接修改原文件，请提前备份重要数据。
+```
+<img width="1254" height="87" alt="image" src="https://github.com/user-attachments/assets/dd916a2f-bbf1-41cc-a48c-afbcdc873809" />
 
-3.在目标环境中，只需要将 2.txt 与BypassAv.exe文件放在同一目录下即可正常使用。【BypassAv.exe可以随意改名】    
-<img width="132" height="204" alt="image" src="https://github.com/user-attachments/assets/fc97f9d8-dede-4903-9877-b2479d3334ce" />
+2.使用test.exe 进行加载即可：
+```
+// ============ 使用说明 ============
+// 命令行参数:
+//   test.exe <shellcode_file> <xor_key>
+// 示例:
+//   test.exe shellcode.bin "MySecretKey123"
+```
+<img width="1890" height="477" alt="image" src="https://github.com/user-attachments/assets/318f7c94-566e-46f7-8014-fd33e12da715" />
 
 
 
 # 更新日志  
 更新说明，免杀失效可在问题中留言，作者会留意并更新，持续更新.....  
-2025.7.27  ----  增加使用说明   
+2026.3.18  ----  增加内存对抗，增加反调试，Xor.exe优化增加帮助说明·自定义密码·自定义文件
+2025.7.27  ----  增加使用说明【已删除】   
 2025.7.23  ----  增加Hook   
-2025.7.20  ----  增加导入表隐藏处理   
-
-<img width="1419" height="605" alt="image" src="https://github.com/user-attachments/assets/2525f15f-55f6-4c59-9d4c-103b8553f4a6" />
+2025.7.20  ----  增加导入表隐藏处理【已删除】   
 
 
 # 免杀效果  
-支持 Windows Defender，腾讯安全管家以及火绒等杀软一键上线并执行命令  
-<img width="1713" height="1193" alt="image" src="https://github.com/user-attachments/assets/1a6e10e1-79fe-43d9-a163-fbb1c0869c5a" />
-<img width="1933" height="1270" alt="image" src="https://github.com/user-attachments/assets/f0ffe380-dcab-4236-b3e1-1946f28a5c85" />
-<img width="1133" height="589" alt="image" src="https://github.com/user-attachments/assets/c6f030ae-1265-4350-955b-7d0d10fa5507" />
+支持 Windows Defender，360安全云以及卡巴斯基等杀软一键上线并执行命令  
+<img width="1779" height="1038" alt="1773820302477_0d0538e964c2426fb3754ce68cadcdfd" src="https://github.com/user-attachments/assets/e6b9be5c-5de4-4f1f-b13e-581ad40096a9" />
+<img width="1106" height="420" alt="1773820524049_bdffedb52c614ddbbf72983e010742a5" src="https://github.com/user-attachments/assets/7f8c1f6d-0315-40cd-9686-9b23b22b8683" />
+<img width="1584" height="717" alt="585f03c306d1e4e0424323f319d7dc61" src="https://github.com/user-attachments/assets/8cdd71b4-a85f-48b2-a858-e8d15cf1fa74" />
+```
+360木马查杀扫描日志
+开始时间: 2026-3-18 16:08:41
+扫描用时: 00:00:01
+扫描类型: 自定义扫描
+扫描引擎:360云查杀引擎（本地木马库）  360启发式引擎  QEX脚本查杀引擎 
+             QVM Ⅱ人工智能引擎 鲲鹏引擎  
+扫描文件数: 1
+系统关键位置文件: 0
+系统内存运行模块: 0
+压缩包文件: 0
+安全的文件数: 1
+发现安全威胁: 0
+已处理安全威胁: 0
+
+
+扫描选项
+扫描后自动关机: 否
+扫描模式: 快速模式
+管理员：是
+
+
+扫描内容
+C:\Users\user\Desktop\360\
+
+
+白名单设置
+
+
+扫描结果
+未发现安全威胁
+```
+
+
+
+
